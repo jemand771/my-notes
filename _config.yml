@@ -1,5 +1,8 @@
 theme: jekyll-theme-leaf
 
+title: willy's collection of random notes
+iconURL: /assets/willy.png
+
 social:
   github: jemand771
   twitter: jemand771
