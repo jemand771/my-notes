@@ -22,9 +22,10 @@ jobs:
           images: |
             ghcr.io/jemand771/my-notes
           flavor: |
-            latest=auto
+            latest=false
           tags: |
             type=raw,value=${{ github.sha }}
+            type=raw,enable=${{ github.ref == 'refs/heads/main' }},value=latest
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
